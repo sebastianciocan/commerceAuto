@@ -30,6 +30,9 @@ public class MenuPage {
                 element.findElement(By.cssSelector("a")).click();
                 break;
             }
+            else{
+                System.out.println("No menu item contained what you searched for.");
+            }
         }
     }
 
