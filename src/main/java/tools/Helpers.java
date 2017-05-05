@@ -9,9 +9,10 @@ import java.util.Date;
 public class Helpers {
 
     public static String getCurrentTimeStamp(){
-        SimpleDateFormat sdfDate = new SimpleDateFormat("ddHHmmss");
+        SimpleDateFormat sdfDate = new SimpleDateFormat("yyMMddHHmmss");
         Date now = new Date();
         String strDate = sdfDate.format(now);
+        System.out.println(strDate);
         return  strDate;
     }
 }

@@ -9,14 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by sebastianciocan on 5/4/2017.
  */
-public class HomePageContent {
+public class HomePageContent extends AbstractPage  {
 
     WebDriver driver;
 
     public HomePageContent(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+        super(driver);
+}
 
     @FindBy(css = ".messages.status ")
     WebElement accountCreatedSuccessfullyMessage;

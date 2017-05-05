@@ -8,13 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by sebastianciocan on 5/4/2017.
  */
-public class RegisteringPage {
+public class RegisteringPage extends AbstractPage  {
 
     WebDriver driver;
 
     public RegisteringPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     @FindBy(id = "edit-name")

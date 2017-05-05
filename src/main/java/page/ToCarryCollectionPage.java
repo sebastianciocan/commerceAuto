@@ -8,13 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by sebastianciocan on 5/4/2017.
  */
-public class ToCarryCollectionPage {
+public class ToCarryCollectionPage extends AbstractPage  {
 
     WebDriver driver;
 
     public ToCarryCollectionPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
+        super(driver);
     }
 
     public void checkIfTheCurrentPageIsTheToCarryOne(String contains){

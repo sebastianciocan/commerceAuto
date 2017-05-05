@@ -16,7 +16,7 @@ public class BaseTest {
 
     @Before
     public void setup(){
-        System.setProperty("webdriver.firefox.marionette", ConstantsPage.gheckoDriverPath);
+//        System.setProperty("webdriver.firefox.marionette", ConstantsPage.gheckoDriverPath);
         driver = new FirefoxDriver();
         driver.get(ConstantsPage.URL);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

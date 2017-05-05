@@ -11,13 +11,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by sebastianciocan on 5/4/2017.
  */
-public class LoginPage {
+public class LoginPage extends AbstractPage  {
 
     WebDriver driver;
 
     public LoginPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     @FindBy(css = "#edit-name")

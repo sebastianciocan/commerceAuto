@@ -11,12 +11,11 @@ import java.util.List;
 /**
  * Created by sebastianciocan on 5/4/2017.
  */
-public class MenuPage {
+public class MenuPage extends AbstractPage  {
     WebDriver driver;
 
     public MenuPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     @FindBy(css = "#main-menu")
