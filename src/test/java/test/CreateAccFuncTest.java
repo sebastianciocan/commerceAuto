@@ -16,8 +16,8 @@ public class CreateAccFuncTest extends BaseTest {
         RegisteringPage registeringPage = new RegisteringPage(driver);
         HomePageContent homePageContent = new HomePageContent(driver);
         headerPage.clickCreateAccountButton();
-        registeringPage.setUserNameInput("test2");
-        registeringPage.setUserEmailAddressInput("test2@test.comish");
+        registeringPage.setUserNameInput("test3");
+        registeringPage.setUserEmailAddressInput("test3@test.comish");
         registeringPage.setPasswordInput("parola123");
         registeringPage.setConfirmPasswordInput("parola123");
         registeringPage.clickSubmitButton();
